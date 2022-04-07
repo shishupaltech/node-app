@@ -1,0 +1,19 @@
+if you want to use the node then install first then check version by typing =>"node"
+so node is a serverside environment which provide the environment in which we can write the code for the backend without browser
+
+const a = 20
+
+// npm => npm is node package management
+before initial you have to do init
+
+// it create the package.json in which we can see all the dependencies
+
+1. if you delete the node_modules folder by mistake then just comeback this directory agin by using "npm install" this command will install the dependencies which are exist in the file packages.json
+
+2. package is bundle of dependencies
+
+express=> express is used to write the code in with in small
+
+console.log(window);// this is in the browser that's why we can access the window object this we access at the window
+
+4. in node js whatever  will create that will be a object althogth it is variable or function
