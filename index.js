@@ -89,10 +89,11 @@ const { fstat } = require("fs")
 // create server 
 const fs = require("fs");
 const home = fs.readFileSync("./index.html","utf-8");
-console.log(__dirname);
-console.log(__filename);
-const PORT = 4000;
-const hostname = "localhost";
+// console.log(__dirname);
+// console.log(__filename);
+// const PORT = 4000;
+const PORT = process.env.PORT;
+// const hostname = "localhost";
 const http = require("http")
 //server is create 
 const server = http.createServer((req,res)=>{
@@ -116,6 +117,6 @@ const server = http.createServer((req,res)=>{
 });
 
 // now we have to listen
-server.listen(PORT,hostname,()=>{
-    console.log(`server is working on http://${hostname}:${PORT}`)
+server.listen(PORT,()=>{
+    console.log(`server is working on`)
 })
